@@ -1,0 +1,37 @@
+.overlay {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .overlay__card {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+  
+    width: 100%;
+    height: 100%;
+  
+    background-color: var(--accent-color);
+    opacity: 0;
+  
+    transform: translateY(100%);
+    transition: transform 250ms var(--hover-focus-time),
+      opacity 250ms var(--hover-focus-time);
+
+    .works__link:hover & {
+      transform: translateY(0);
+      opacity: 90%;
+    }
+  }
+  
+  .overlay__text {
+    margin: 0;
+    padding: 63px 24px;
+  
+    font-size: 18px;
+    line-height: 1.55;
+    letter-spacing: 0.54px;
+    text-align: left;
+  
+    color: var(--primary-bg-color);
+  }

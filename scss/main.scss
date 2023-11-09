@@ -1,0 +1,52 @@
+// utils
+
+@import './utils/variables';
+@import './utils/visually-hidden';
+@import './utils/mixins';
+
+// base
+
+@import './base/common';
+@import './base/reset';
+@import './base/container';
+@import './base/button';
+
+// components
+
+    // header
+@import './components/header/header';
+@import './components/header/logo';
+@import './components/header/nav';
+@import './components/header/info';
+
+    // hero
+@import './components/hero/hero';
+@import './components/hero/overlay-bg';
+@import './components/hero/backdrop';
+@import './components/hero/modal-window';
+@import './components/hero/modal-form';
+@import './components/hero/textarea';
+@import './components/hero/checkbox';
+
+    // features
+@import './components/features/features';
+
+    // examples
+@import './components/examples/examples';
+
+    // team
+@import './components/team/team';
+@import './components/team/card';
+@import './components/team/socials';
+
+    // clients
+@import './components/clients/clients';
+
+    // portfolio
+@import './components/portfolio/filter';
+@import './components/portfolio/overlay';
+@import './components/portfolio/works';
+
+    // footer
+@import './components/footer/footer';
+@import './components/footer/footer-form';

@@ -1,0 +1,8 @@
+.header--bordered {
+    border-bottom: 1px solid var(--header-underline-color);
+  }
+  
+  .header__container {
+    display: flex;
+    align-items: center;
+  }
