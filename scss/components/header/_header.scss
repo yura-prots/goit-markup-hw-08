@@ -1,8 +1,12 @@
 .header--bordered {
-    border-bottom: 1px solid var(--header-underline-color);
-  }
-  
-  .header__container {
-    display: flex;
-    align-items: center;
-  }
+  border-bottom: 1px solid var(--header-underline-color);
+}
+
+.header__container {
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+.js-menu-container {
+  display: none;
+}

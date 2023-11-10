@@ -1,20 +1,19 @@
 .logo {
-    width: 145px;
-    height: 31px;
+  width: 145px;
+}
+
+.logo__link {
+  font-family: 'Raleway', sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: 0.78px;
+
+  color: var(--accent-color);
+}
+
+.logo__text {
+  &--black {
+    color: var(--logo-black-color);
   }
-  
-  .logo__link {
-    font-family: 'Raleway', sans-serif;
-    font-size: 26px;
-    font-weight: 700;
-    line-height: 1.2;
-    letter-spacing: 0.78px;
-  
-    color: var(--accent-color);
-  }
-  
-  .logo__text {
-    &--black {
-      color: var(--logo-black-color);
-    }
-  }
+}

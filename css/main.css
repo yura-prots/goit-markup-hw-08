@@ -47,11 +47,6 @@ body {
   color: var(--primary-text-color);
 }
 
-.section {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
-
 img {
   display: block;
 }
@@ -67,10 +62,25 @@ img {
 }
 
 .container {
-  width: 1200px;
-  margin: 0 auto;
+  margin-right: auto;
+  margin-left: auto;
   padding-right: 15px;
   padding-left: 15px;
+}
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
 }
 
 .btn {
@@ -100,22 +110,21 @@ img {
 }
 
 .header__container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+.js-menu-container {
+  display: none;
 }
 
 .logo {
   width: 145px;
-  height: 31px;
 }
 
 .logo__link {
   font-family: "Raleway", sans-serif;
-  font-size: 26px;
+  font-size: 24px;
   font-weight: 700;
   line-height: 1.2;
   letter-spacing: 0.78px;
