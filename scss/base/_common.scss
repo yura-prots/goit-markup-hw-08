@@ -1,20 +1,24 @@
 html {
-    scroll-behavior: smooth;
-  }
-  
+  scroll-behavior: smooth;
+}
+
 body {
-    font-family: var(--primary-font-family);
-    font-size: var(--primary-font-size);
-    font-weight: var(--primary-font-weight);
-    letter-spacing: var(--primary-letter-spacing);
-    text-align: var(--primary-text-align);
+  font-family: var(--primary-font-family);
+  font-size: var(--primary-font-size);
+  font-weight: var(--primary-font-weight);
+  letter-spacing: var(--primary-letter-spacing);
+  text-align: var(--primary-text-align);
 
-    background-color: var(--primary-bg-color);
-    color: var(--primary-text-color);
+  background-color: var(--primary-bg-color);
+  color: var(--primary-text-color);
+}
+
+.section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
   }
-
-
-
-  
-  
-  
+}

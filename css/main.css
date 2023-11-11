@@ -47,6 +47,17 @@ body {
   color: var(--primary-text-color);
 }
 
+.section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+@media screen and (min-width: 1200px) {
+  .section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
+
 img {
   display: block;
 }
@@ -215,23 +226,36 @@ img {
 }
 
 .hero {
-  padding-top: 200px;
-  padding-bottom: 200px;
-  text-align: center;
+  padding-top: 118px;
+  padding-bottom: 118px;
+}
+@media screen and (min-width: 1200px) {
+  .hero {
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
 }
 
 .hero__title {
-  width: 696px;
   margin-top: 0;
-  margin-right: auto;
   margin-bottom: 30px;
+  margin-right: auto;
   margin-left: auto;
-  font-size: 44px;
+  width: 360px;
+  font-size: 26px;
   font-weight: 900;
-  line-height: 1.36;
-  letter-spacing: 2.64px;
+  line-height: 1.62;
+  letter-spacing: 1.56px;
   text-transform: uppercase;
   color: var(--primary-bg-color);
+}
+@media screen and (min-width: 1200px) {
+  .hero__title {
+    width: 696px;
+    font-size: 44px;
+    line-height: 1.36;
+    letter-spacing: 2.64px;
+  }
 }
 
 .hero__btn {
@@ -254,15 +278,14 @@ img {
   -webkit-transition: color 250ms var(--hover-focus-time);
   transition: color 250ms var(--hover-focus-time);
   cursor: pointer;
-  width: 216px;
 }
 .hero__btn:hover {
   color: var(--hero-bg-color);
 }
 
 .overlay-bg {
-  height: 600px;
-  max-width: 1600px;
+  width: 480px;
+  height: 400px;
   margin-right: auto;
   margin-left: auto;
   background-color: var(--hero-bg-color);
@@ -271,6 +294,18 @@ img {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+}
+@media screen and (min-width: 768px) {
+  .overlay-bg {
+    width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .overlay-bg {
+    max-width: 1600px;
+    width: 100%;
+    height: 600px;
+  }
 }
 
 .backdrop {
