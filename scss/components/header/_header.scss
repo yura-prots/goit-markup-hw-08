@@ -1,17 +1,13 @@
 .header {
-  &--bordered {
-    border-bottom: 1px solid var(--header-underline-color);
-  }
-}
-
-.header__container {
   position: relative;
-
   display: flex;
   align-items: center;
   justify-content: space-between;
 
-  width: 480px;
   padding-top: 10px;
   padding-bottom: 10px;
+
+  &--bordered {
+    border-bottom: 1px solid var(--header-underline-color);
+  }
 }
