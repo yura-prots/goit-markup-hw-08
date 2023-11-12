@@ -29,7 +29,12 @@
         </div>
 
         <div class="menu">
-          <button class="menu__btn" type="button" aria-expanded="false">
+          <button
+            class="menu__btn"
+            type="button"
+            aria-expanded="false"
+            aria-controls="menu-nav"
+          >
             <svg width="40" height="40" aria-label="Перемикач мобільного меню">
               <use
                 class="menu__icon menu-open"
@@ -42,7 +47,7 @@
             </svg>
           </button>
 
-          <div class="menu__nav">
+          <div class="menu__nav" id="menu-nav">
             <nav class="nav">
               <ul class="nav__list list">
                 <li class="nav__item">

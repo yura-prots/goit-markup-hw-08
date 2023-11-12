@@ -13,13 +13,14 @@
 
 // components
 
-    // header
+// header
 @import './components/header/header';
 @import './components/header/logo';
+@import './components/header/menu';
 @import './components/header/nav';
 @import './components/header/info';
 
-    // hero
+// hero
 @import './components/hero/hero';
 @import './components/hero/overlay-bg';
 @import './components/hero/backdrop';
@@ -28,25 +29,25 @@
 @import './components/hero/textarea';
 @import './components/hero/checkbox';
 
-    // features
+// features
 @import './components/features/features';
 
-    // examples
+// examples
 @import './components/examples/examples';
 
-    // team
+// team
 @import './components/team/team';
 @import './components/team/card';
 @import './components/team/socials';
 
-    // clients
+// clients
 @import './components/clients/clients';
 
-    // portfolio
+// portfolio
 @import './components/portfolio/filter';
 @import './components/portfolio/overlay';
 @import './components/portfolio/works';
 
-    // footer
+// footer
 @import './components/footer/footer';
 @import './components/footer/footer-form';

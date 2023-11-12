@@ -13,36 +13,3 @@
   padding-top: 10px;
   padding-bottom: 10px;
 }
-
-.menu__btn {
-  display: inline-flex;
-
-  margin: 0;
-  padding: 0;
-
-  border: none;
-  background-color: transparent;
-
-  &:hover .menu__icon,
-  &:focus .menu__icon {
-    fill: var(--accent-color);
-  }
-
-  & .menu-close {
-    display: none;
-  }
-
-  &.is-open .menu-close {
-    display: block;
-  }
-
-  &.is-open .menu-open {
-    display: none;
-  }
-}
-
-.menu__nav {
-  @media screen and (max-width: 767px) {
-    display: none;
-  }
-}
