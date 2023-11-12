@@ -279,26 +279,28 @@ img {
   text-align: left;
 }
 
-.info__item.email {
+.info__item:first-child {
+  padding-bottom: 64px;
+}
+.info__item:last-child {
+  padding-bottom: 32px;
+}
+
+.info__link {
+  -webkit-transition: color 250ms var(--hover-focus-time);
+  transition: color 250ms var(--hover-focus-time);
+}
+.info__link.email {
   font-size: 24px;
   font-weight: 500;
   letter-spacing: 0.48px;
   color: var(--primary-text-color);
 }
-.info__item.phone {
+.info__link.phone {
   font-size: 34px;
   font-weight: 500;
   letter-spacing: 0.68px;
   color: var(--accent-color);
-}
-
-.info__link {
-  font-weight: 500;
-  line-height: 1.2;
-  letter-spacing: 0.28px;
-  color: var(--primary-text-color);
-  -webkit-transition: color 250ms var(--hover-focus-time);
-  transition: color 250ms var(--hover-focus-time);
 }
 .info__link:hover, .info__link:focus {
   color: var(--accent-color);
