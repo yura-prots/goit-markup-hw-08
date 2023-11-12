@@ -1,13 +1,29 @@
 .info {
+  display: flex;
+  flex-direction: column-reverse;
+
+  text-align: left;
 }
 
 .info__item {
+  &.email {
+    font-size: 24px;
+    font-weight: 500;
+    letter-spacing: 0.48px;
+
+    color: var(--primary-text-color);
+  }
+
+  &.phone {
+    font-size: 34px;
+    font-weight: 500;
+    letter-spacing: 0.68px;
+
+    color: var(--accent-color);
+  }
 }
 
 .info__link {
-  display: flex;
-  align-items: center;
-
   font-weight: 500;
   line-height: 1.2;
   letter-spacing: 0.28px;
