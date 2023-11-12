@@ -208,6 +208,11 @@ img {
   }
 }
 
+.menu__icon {
+  -webkit-transition: fill 250ms var(--hover-focus-time);
+  transition: fill 250ms var(--hover-focus-time);
+}
+
 .nav__list {
   display: -webkit-box;
   display: -ms-flexbox;
