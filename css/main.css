@@ -121,6 +121,7 @@ img {
 }
 
 .header__container {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -164,6 +165,11 @@ img {
 @media screen and (max-width: 767px) {
   .menu__nav {
     display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: var(--primary-bg-color);
   }
 }
 
@@ -187,6 +193,11 @@ img {
 }
 .menu__btn.is-open .menu-open {
   display: none;
+}
+@media screen and (min-width: 768px) {
+  .menu__btn {
+    display: none;
+  }
 }
 
 .nav__list {
