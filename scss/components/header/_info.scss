@@ -1,21 +1,12 @@
 .info {
-  display: inline-flex;
-  align-items: center;
-  margin-left: auto;
 }
 
 .info__item {
-  &:not(:last-child) {
-    margin-right: 40px;
-  }
 }
 
 .info__link {
   display: flex;
   align-items: center;
-
-  padding-top: 32px;
-  padding-bottom: 32px;
 
   font-weight: 500;
   line-height: 1.2;
@@ -34,4 +25,8 @@
 .info__icon {
   margin-right: 10px;
   fill: currentColor;
+
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
 }
