@@ -249,6 +249,10 @@ img {
   padding-left: 10px;
 }
 
+.nav {
+  margin-bottom: 306px;
+}
+
 .nav__item {
   text-align: left;
 }
@@ -280,10 +284,10 @@ img {
 }
 
 .info__item:first-child {
-  padding-bottom: 64px;
+  margin-bottom: 64px;
 }
 .info__item:last-child {
-  padding-bottom: 32px;
+  margin-bottom: 32px;
 }
 
 .info__link {
