@@ -27,6 +27,11 @@
 
   @media screen and (min-width: 768px) {
     display: flex;
+    flex-direction: row;
+
+    margin: 0;
+    padding: 0;
+    padding-left: 88px;
   }
 }
 
@@ -78,7 +83,12 @@
 
     color: var(--accent-color);
   }
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
 }
+
 .menu__socials__item {
   &:not(:last-child) {
     padding-right: 10px;
