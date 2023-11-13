@@ -651,115 +651,117 @@
 
     <!-- Підвал -->
 
-    <footer class="footer">
-      <div class="footer__container container">
-        <div class="footer__address">
-          <div class="logo">
-            <a class="logo__link link" href="./index.html"
-              >Web<span class="logo__text logo__text--white">Studio</span></a
-            >
-          </div>
+    <footer class="footer container">
+      <div class="logo">
+        <a class="logo__link link" href="./index.html"
+          >Web<span class="logo__text logo__text--white">Studio</span></a
+        >
+      </div>
 
-          <address class="address">
+      <address class="address">
+        <ul class="address__list list">
+          <li class="address__item">
             <p class="address__text">м. Київ, пр-т Лесі Українки, 26</p>
+          </li>
+          <li class="address__item">
             <a class="address__link link" href="mailto:info@devstudio.com"
               >info@devstudio.com</a
             >
+          </li>
+          <li class="address__item">
             <a class="address__link link" href="tel:380961111111"
               >+38 096 111 11 11</a
             >
-          </address>
-        </div>
+          </li>
+        </ul>
+      </address>
 
-        <div class="footer__socials">
-          <div class="socials">
-            <p class="socials__title">Приєднуйтесь</p>
+      <div class="footer__socials">
+        <div class="socials">
+          <p class="socials__title">Приєднуйтесь</p>
 
-            <ul class="socials__list list">
-              <li class="socials__item socials__item--black">
-                <a
-                  class="socials__link link"
-                  href=""
-                  target="_blank"
-                  aria-label="іконка Instagram"
+          <ul class="socials__list list">
+            <li class="socials__item socials__item--black">
+              <a
+                class="socials__link link"
+                href=""
+                target="_blank"
+                aria-label="іконка Instagram"
+              >
+                <svg
+                  class="socials__icon socials__icon--white"
+                  width="20"
+                  height="20"
                 >
-                  <svg
-                    class="socials__icon socials__icon--white"
-                    width="20"
-                    height="20"
-                  >
-                    <use href="./images/icons/sprite.svg#instagram"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="socials__item socials__item--black">
-                <a
-                  class="socials__link link"
-                  href=""
-                  target="_blank"
-                  aria-label="іконка Twitter"
-                >
-                  <svg
-                    class="socials__icon socials__icon--white"
-                    width="20"
-                    height="20"
-                  >
-                    <use href="./images/icons/sprite.svg#twitter"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="socials__item socials__item--black">
-                <a
-                  class="socials__link link"
-                  href=""
-                  target="_blank"
-                  aria-label="іконка Facebook"
-                >
-                  <svg
-                    class="socials__icon socials__icon--white"
-                    width="20"
-                    height="20"
-                  >
-                    <use href="./images/icons/sprite.svg#facebook"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="socials__item socials__item--black">
-                <a
-                  class="socials__link link"
-                  href=""
-                  target="_blank"
-                  aria-label="іконка Linkedin"
-                >
-                  <svg
-                    class="socials__icon socials__icon--white"
-                    width="20"
-                    height="20"
-                  >
-                    <use href="./images/icons/sprite.svg#linkedin"></use>
-                  </svg>
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="footer__form">
-          <form class="form">
-            <b class="form__title">Підпишіться на розсилку</b>
-            <div class="form__field">
-              <input class="form__input" type="email" placeholder="E-mail" />
-
-              <button class="form__btn" type="submit">
-                <span class="form__btn-label">Підписатися</span>
-                <svg class="form__btn-icon" width="24" height="24">
-                  <use href="./images/icons/sprite.svg#icon-send"></use>
+                  <use href="./images/icons/sprite.svg#instagram"></use>
                 </svg>
-              </button>
-            </div>
-          </form>
+              </a>
+            </li>
+            <li class="socials__item socials__item--black">
+              <a
+                class="socials__link link"
+                href=""
+                target="_blank"
+                aria-label="іконка Twitter"
+              >
+                <svg
+                  class="socials__icon socials__icon--white"
+                  width="20"
+                  height="20"
+                >
+                  <use href="./images/icons/sprite.svg#twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="socials__item socials__item--black">
+              <a
+                class="socials__link link"
+                href=""
+                target="_blank"
+                aria-label="іконка Facebook"
+              >
+                <svg
+                  class="socials__icon socials__icon--white"
+                  width="20"
+                  height="20"
+                >
+                  <use href="./images/icons/sprite.svg#facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="socials__item socials__item--black">
+              <a
+                class="socials__link link"
+                href=""
+                target="_blank"
+                aria-label="іконка Linkedin"
+              >
+                <svg
+                  class="socials__icon socials__icon--white"
+                  width="20"
+                  height="20"
+                >
+                  <use href="./images/icons/sprite.svg#linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
         </div>
       </div>
+
+      <form class="form">
+        <b class="form__title">Підпишіться на розсилку</b>
+        <!-- <div class="form__field"> -->
+        <input class="form__input" type="email" placeholder="E-mail" />
+
+        <button class="form__btn" type="submit">
+          <span class="form__btn-label">Підписатися</span>
+          <svg class="form__btn-icon" width="24" height="24">
+            <use href="./images/icons/sprite.svg#icon-send"></use>
+          </svg>
+        </button>
+        <!-- </div> -->
+      </form>
     </footer>
 
     <script src="./js/mobile-menu.js"></script>
