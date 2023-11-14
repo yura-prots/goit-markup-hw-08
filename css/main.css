@@ -168,6 +168,12 @@ img {
 @media screen and (min-width: 768px) {
   .menu {
     width: 100%;
+    margin-left: 88px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .menu {
+    margin-left: 93px;
   }
 }
 
@@ -1330,9 +1336,17 @@ img {
 }
 
 .form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin-top: 60px;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .form__title {
