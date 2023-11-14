@@ -159,6 +159,11 @@ img {
 .logo__text--black {
   color: var(--logo-black-color);
 }
+@media screen and (min-width: 1200px) {
+  .logo__text {
+    font-size: 26px;
+  }
+}
 
 .menu {
   display: -webkit-inline-box;
@@ -1302,12 +1307,30 @@ img {
   color: var(--primary-bg-color);
 }
 
+@media screen and (min-width: 768px) {
+  .address-box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+}
+
 .address {
-  margin-top: 28px;
   margin-bottom: 60px;
   font-style: normal;
   line-height: 1.14;
   color: var(--primary-bg-color);
+}
+@media screen and (min-width: 768px) {
+  .address {
+    margin-bottom: 0;
+  }
+}
+
+.address__list {
+  margin-top: 28px;
 }
 
 .address__item:not(:last-child) {
@@ -1376,6 +1399,11 @@ img {
 }
 .form__input:focus {
   border-color: var(--accent-color);
+}
+@media screen and (min-width: 480px) {
+  .form__input {
+    max-width: 450px;
+  }
 }
 
 .form__btn {
