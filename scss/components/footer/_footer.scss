@@ -1,7 +1,11 @@
 .footer {
-  padding: 60px 10px;
+  padding: 60px 15px;
 
   background-color: var(--footer-bg-color);
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+  }
 }
 
 .logo__text--white {
@@ -11,7 +15,14 @@
 .address-box {
   @media screen and (min-width: 768px) {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
+  }
+
+  @media screen and (min-width: 1200px) {
+    justify-content: left;
+    text-align: left;
+
+    width: 50%;
   }
 }
 
@@ -25,6 +36,10 @@
 
   @media screen and (min-width: 768px) {
     margin-bottom: 0;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding-right: 94px;
   }
 }
 
