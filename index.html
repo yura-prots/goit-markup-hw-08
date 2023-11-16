@@ -288,36 +288,66 @@
           <ul class="examples__list list">
             <li class="examples__item">
               <div class="examples__img">
-                <img
-                  src="./images/examples/pc.jpg"
-                  alt="Люитина за комп'ютером"
-                  width="370"
-                  height="294"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/examples/desktop/pc_desk.jpg    1x,
+                      ./images/examples/desktop/pc_desk@2x.jpg 2x
+                    "
+                    type="image/jpg"
+                  />
+                  <img
+                    src="./images/examples/desktop/pc_desk.jpg"
+                    alt="Люитина за комп'ютером"
+                    width="370"
+                    height="294"
+                    loading="lazy"
+                  />
+                </picture>
                 <p class="examples__text">Десктопні додатки</p>
               </div>
             </li>
 
             <li class="examples__item">
               <div class="examples__img">
-                <img
-                  src="./images/examples/phone.jpg"
-                  alt="Люитина з телефоном"
-                  width="370"
-                  height="294"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/examples/desktop/phone_desk.jpg    1x,
+                      ./images/examples/desktop/phone_desk@2x.jpg 2x
+                    "
+                    type="image/jpg"
+                  />
+                  <img
+                    src="./images/examples/desktop/phone_desk.jpg"
+                    alt="Люитина з телефоном"
+                    width="370"
+                    height="294"
+                    loading="lazy"
+                  />
+                </picture>
                 <p class="examples__text">Мобільні додатки</p>
               </div>
             </li>
 
             <li class="examples__item">
               <div class="examples__img">
-                <img
-                  src="./images/examples/tablet.jpg"
-                  alt="Люитина з планшетом"
-                  width="370"
-                  height="294"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/examples/desktop/tablet_desk.jpg    1x,
+                      ./images/examples/desktop/tablet_desk@2x.jpg 2x
+                    "
+                    type="image/jpg"
+                  />
+                  <img
+                    src="./images/examples//desktop/tablet_desk.jpg"
+                    alt="Люитина з планшетом"
+                    width="370"
+                    height="294"
+                    loading="lazy"
+                  />
+                </picture>
                 <p class="examples__text">Дизайнерські рішення</p>
               </div>
             </li>
@@ -365,6 +395,7 @@
                   alt="Фото Ігор Дем'яненко"
                   width="450"
                   height="460"
+                  loading="lazy"
                 />
               </picture>
               <h3 class="card__title">Ігор Дем'яненко</h3>
@@ -459,6 +490,7 @@
                   alt="Фото Ольга Рєпіна"
                   width="450"
                   height="460"
+                  loading="lazy"
                 />
               </picture>
               <h3 class="card__title">Ольга Рєпіна</h3>
@@ -551,6 +583,7 @@
                   alt="Фото Микола Тарасов"
                   width="450"
                   height="460"
+                  loading="lazy"
                 />
               </picture>
               <h3 class="card__title">Микола Тарасов</h3>
@@ -643,6 +676,7 @@
                   alt="Фото Михайло Єрмаков"
                   width="450"
                   height="460"
+                  loading="lazy"
                 />
               </picture>
               <h3 class="card__title">Михайло Єрмаков</h3>

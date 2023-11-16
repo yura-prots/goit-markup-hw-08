@@ -1,5 +1,6 @@
 .overlay-bg {
-  width: 480px;
+  max-width: 480px;
+  width: 100%;
   height: 400px;
   margin-right: auto;
   margin-left: auto;
@@ -23,7 +24,8 @@
   }
 
   @media screen and (min-width: 768px) {
-    width: 768px;
+    max-width: 768px;
+    width: 100%;
 
     background-image: linear-gradient(
         to right,
