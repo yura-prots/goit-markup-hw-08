@@ -302,7 +302,7 @@ img {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
-  margin-bottom: 306px;
+  margin-bottom: 94%;
 }
 @media screen and (min-width: 768px) {
   .nav {
@@ -351,6 +351,9 @@ img {
   .nav__link {
     font-size: 40px;
     letter-spacing: 0.8px;
+  }
+  .nav__link--current {
+    color: var(--accent-color);
   }
 }
 @media screen and (min-width: 768px) {
