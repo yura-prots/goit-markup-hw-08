@@ -2,7 +2,9 @@
   padding: 60px 15px;
 
   background-color: var(--footer-bg-color);
+}
 
+.footer__box {
   @media screen and (min-width: 1200px) {
     display: flex;
   }
