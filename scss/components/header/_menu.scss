@@ -16,6 +16,7 @@
   flex-direction: column;
 
   width: 100%;
+  height: 100vh;
   padding: 48px 40px;
 
   &.is-open {
@@ -80,6 +81,7 @@
 
 .menu__socials {
   display: flex;
+  flex-wrap: wrap;
 
   & .link {
     font-size: 18px;
