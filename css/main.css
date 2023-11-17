@@ -862,7 +862,7 @@ img {
 }
 
 .features__item {
-  width: 450px;
+  width: 100%;
 }
 @media screen and (max-width: 767px) {
   .features__item:not(:last-child) {
