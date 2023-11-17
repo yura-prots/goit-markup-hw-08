@@ -10,7 +10,6 @@
     align-content: space-between;
 
     width: 75%;
-    height: 90px;
   }
 
   @media screen and (min-width: 768px) {
@@ -23,10 +22,9 @@
 }
 
 .filter__item {
-  height: 38px;
-
   &:not(:last-child) {
     margin-right: 8px;
+    margin-bottom: 15px;
   }
 }
 
