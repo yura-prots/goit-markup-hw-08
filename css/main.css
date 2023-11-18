@@ -1347,7 +1347,14 @@ img {
 }
 
 .works__link {
-  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100%;
   text-decoration: none;
   -webkit-transition: -webkit-box-shadow 250ms var(--hover-focus-time);
   transition: -webkit-box-shadow 250ms var(--hover-focus-time);
@@ -1360,6 +1367,9 @@ img {
 }
 
 .works__info {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
   padding: 20px 24px;
   border: 1px solid #eee;
   border-top: none;
