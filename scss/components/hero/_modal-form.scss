@@ -21,6 +21,11 @@
 
   color: var(--secondary-text-color);
 
+  @media screen and (max-width: 479px) {
+    font-size: 18px;
+    line-height: 1.2;
+  }
+
   @media screen and (min-width: 1200px) {
     line-height: 1.2;
   }
@@ -60,6 +65,21 @@
 
   &:focus {
     border-color: var(--accent-color);
+  }
+}
+
+.modal-form__btn {
+  @include btn;
+
+  padding-left: 32px;
+  padding-right: 32px;
+
+  background-color: #188ce8;
+
+  @media screen and (max-width: 479px) {
+    width: 180px;
+    height: 48px;
+    font-size: 14px;
   }
 }
 

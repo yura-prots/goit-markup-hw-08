@@ -9,7 +9,7 @@
   height: 24px;
 
   font-size: 12px;
-  letter-spacing: 0.36;
+  letter-spacing: 0.36px;
 
   color: var(--primary-text-color);
 
@@ -55,13 +55,4 @@
   margin-left: 5px;
 
   color: var(--accent-color);
-}
-
-.modal-form__btn {
-  @include btn;
-
-  padding-left: 32px;
-  padding-right: 32px;
-
-  background-color: #188ce8;
 }
