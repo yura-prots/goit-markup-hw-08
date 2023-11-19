@@ -20,8 +20,11 @@
 
   &.is-open {
     display: block;
-    z-index: 1;
     height: 100vh;
+  }
+
+  @media screen and (max-width: 479px) {
+    padding: 30px 20px;
   }
 
   @media screen and (max-width: 767px) {
@@ -94,6 +97,12 @@
     color: var(--accent-color);
   }
 
+  @media screen and (max-width: 479px) {
+    & .link {
+      font-size: 14px;
+    }
+  }
+
   @media screen and (min-width: 768px) {
     display: none;
   }
@@ -108,5 +117,15 @@
 
   &:not(:first-child) {
     padding-left: 10px;
+  }
+
+  @media screen and (max-width: 479px) {
+    &:not(:last-child) {
+      padding-right: 5px;
+    }
+
+    &:not(:first-child) {
+      padding-left: 5px;
+    }
   }
 }
