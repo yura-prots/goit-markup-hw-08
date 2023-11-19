@@ -201,6 +201,7 @@ img {
 .menu__nav.is-open {
   display: block;
   height: 100vh;
+  overflow-y: scroll;
 }
 @media screen and (max-width: 479px) {
   .menu__nav {
@@ -1413,6 +1414,23 @@ img {
   letter-spacing: 0.54px;
   text-align: left;
   color: var(--primary-bg-color);
+}
+@media screen and (max-width: 374px) {
+  .overlay__text {
+    padding: 40px 24px;
+    font-size: 14px;
+  }
+}
+@media screen and (min-width: 375px) and (max-width: 479px) {
+  .overlay__text {
+    padding: 48px 24px;
+    font-size: 16px;
+  }
+}
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .overlay__text {
+    padding: 77px 24px;
+  }
 }
 
 @media screen and (min-width: 768px) {
