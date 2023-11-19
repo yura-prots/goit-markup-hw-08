@@ -17,7 +17,7 @@
 .address-box {
   @media screen and (min-width: 768px) {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
   }
 
   @media screen and (min-width: 1200px) {
