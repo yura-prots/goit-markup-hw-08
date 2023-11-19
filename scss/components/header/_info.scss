@@ -14,7 +14,17 @@
 }
 
 .info__item {
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 479px) {
+    &:first-child {
+      margin-bottom: 50px;
+    }
+
+    &:last-child {
+      margin-bottom: 24px;
+    }
+  }
+
+  @media screen and (min-width: 480px) and (max-width: 767px) {
     &:first-child {
       margin-bottom: 64px;
     }

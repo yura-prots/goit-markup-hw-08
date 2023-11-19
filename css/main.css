@@ -348,7 +348,12 @@ img {
 .nav__item:not(:last-child) {
   margin-right: 50px;
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 479px) {
+  .nav__item:not(:last-child) {
+    margin-bottom: 24px;
+  }
+}
+@media screen and (min-width: 480px) and (max-width: 767px) {
   .nav__item:not(:last-child) {
     margin-bottom: 32px;
   }
@@ -365,7 +370,16 @@ img {
 .nav__link:hover, .nav__link:focus {
   color: var(--accent-color);
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 479px) {
+  .nav__link {
+    font-size: 36px;
+    letter-spacing: 0.8px;
+  }
+  .nav__link--current {
+    color: var(--accent-color);
+  }
+}
+@media screen and (min-width: 480px) and (max-width: 767px) {
   .nav__link {
     font-size: 40px;
     letter-spacing: 0.8px;
@@ -422,7 +436,15 @@ img {
   }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 479px) {
+  .info__item:first-child {
+    margin-bottom: 50px;
+  }
+  .info__item:last-child {
+    margin-bottom: 24px;
+  }
+}
+@media screen and (min-width: 480px) and (max-width: 767px) {
   .info__item:first-child {
     margin-bottom: 64px;
   }
