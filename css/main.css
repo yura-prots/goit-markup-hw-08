@@ -459,17 +459,32 @@ img {
 .info__link:hover, .info__link:focus {
   color: var(--accent-color);
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 479px) {
+  .info__link.email {
+    font-size: 22px;
+    letter-spacing: 0.48px;
+  }
+  .info__link.phone {
+    font-size: 28px;
+    letter-spacing: 0.68px;
+    color: var(--accent-color);
+  }
+}
+@media screen and (min-width: 480px) and (max-width: 767px) {
   .info__link.email {
     font-size: 24px;
-    font-weight: 500;
     letter-spacing: 0.48px;
   }
   .info__link.phone {
     font-size: 34px;
-    font-weight: 500;
     letter-spacing: 0.68px;
     color: var(--accent-color);
+  }
+}
+@media screen and (min-width: 768px) {
+  .info__link {
+    font-size: 12px;
+    letter-spacing: 0.24px;
   }
 }
 @media screen and (min-width: 1200px) {
