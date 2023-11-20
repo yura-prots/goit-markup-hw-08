@@ -122,7 +122,6 @@ img {
 }
 
 .header {
-  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -181,7 +180,7 @@ img {
     margin-left: 88px;
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   .menu {
     margin-left: 93px;
   }
@@ -200,9 +199,9 @@ img {
 }
 .menu__nav.is-open {
   display: block;
+  width: 100vw;
   height: 100vh;
   overflow-y: scroll;
-  z-index: 1;
 }
 @media screen and (max-width: 479px) {
   .menu__nav {
