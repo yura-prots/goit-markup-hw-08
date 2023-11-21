@@ -688,11 +688,6 @@ img {
   visibility: hidden;
   pointer-events: none;
 }
-@media screen and (max-width: 479px) {
-  .backdrop {
-    padding: 90px 10px;
-  }
-}
 
 .modal-window {
   position: absolute;
