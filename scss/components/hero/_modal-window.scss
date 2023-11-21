@@ -1,8 +1,12 @@
 .modal-window {
-  position: relative;
-  transform: scaleX(1);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scaleX(1);
   transform-origin: center;
   transition: transform 250ms var(--hover-focus-time);
+
+  width: calc(100% - 15px);
 
   border-radius: 4px;
   background-color: var(--primary-bg-color);
@@ -14,11 +18,6 @@
   }
 
   @media screen and (min-width: 480px) {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%) scaleX(1);
-
     max-width: 450px;
     width: 100%;
   }

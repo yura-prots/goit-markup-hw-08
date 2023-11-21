@@ -557,22 +557,32 @@ img {
   margin-bottom: 30px;
   margin-right: auto;
   margin-left: auto;
-  width: 360px;
-  font-size: 26px;
-  font-weight: 900;
-  line-height: 1.62;
-  letter-spacing: 1.56px;
+  font-size: 18px;
   text-transform: uppercase;
   color: var(--primary-bg-color);
 }
-@media screen and (max-width: 479px) {
+@media screen and (min-width: 320px) {
   .hero__title {
-    font-size: 20px;
+    max-width: 300px;
+    width: 100%;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1.62;
+    letter-spacing: 1.56px;
+  }
+}
+@media screen and (min-width: 480px) {
+  .hero__title {
+    max-width: 360px;
+    font-size: 26px;
+    font-weight: 900;
+    line-height: 1.62;
+    letter-spacing: 1.56px;
   }
 }
 @media screen and (min-width: 1200px) {
   .hero__title {
-    width: 696px;
+    max-width: 696px;
     font-size: 44px;
     line-height: 1.36;
     letter-spacing: 2.64px;
@@ -603,7 +613,13 @@ img {
 .hero__btn:hover {
   color: var(--hero-bg-color);
 }
-@media screen and (max-width: 479px) {
+@media screen and (max-width: 319px) {
+  .hero__btn {
+    width: 160px;
+    font-size: 12px;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 479px) {
   .hero__btn {
     width: 180px;
     height: 48px;
@@ -660,7 +676,6 @@ img {
   left: 0;
   width: 100%;
   height: 100%;
-  padding: 94px 15px;
   background-color: rgba(0, 0, 0, 0.2);
   opacity: 1;
   visibility: visible;
@@ -680,15 +695,18 @@ img {
 }
 
 .modal-window {
-  position: relative;
-  -webkit-transform: scaleX(1);
-          transform: scaleX(1);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%) scaleX(1);
+          transform: translate(-50%, -50%) scaleX(1);
   -webkit-transform-origin: center;
           transform-origin: center;
   -webkit-transition: -webkit-transform 250ms var(--hover-focus-time);
   transition: -webkit-transform 250ms var(--hover-focus-time);
   transition: transform 250ms var(--hover-focus-time);
   transition: transform 250ms var(--hover-focus-time), -webkit-transform 250ms var(--hover-focus-time);
+  width: calc(100% - 15px);
   border-radius: 4px;
   background-color: var(--primary-bg-color);
   -webkit-box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
@@ -700,11 +718,6 @@ img {
 }
 @media screen and (min-width: 480px) {
   .modal-window {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%) scaleX(1);
-            transform: translate(-50%, -50%) scaleX(1);
     max-width: 450px;
     width: 100%;
   }
