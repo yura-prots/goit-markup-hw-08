@@ -13,6 +13,17 @@
 
   color: var(--primary-text-color);
 
+  @media screen and (max-width: 319px) {
+    font-size: 10px;
+  }
+
+  @media screen and (max-width: 479px) {
+    flex-wrap: wrap;
+
+    margin-bottom: 20px;
+    height: 22px;
+  }
+
   @media screen and (min-width: 1200px) {
     font-size: 14px;
     line-height: 1.71;

@@ -773,6 +773,12 @@ img {
   width: 100%;
   height: 100%;
 }
+@media screen and (max-width: 479px) {
+  .modal-form {
+    padding-right: 25px;
+    padding-left: 25px;
+  }
+}
 
 .modal-form__title {
   display: block;
@@ -906,6 +912,11 @@ img {
   letter-spacing: 0.12px;
   color: rgba(117, 117, 117, 0.5);
 }
+@media screen and (max-width: 479px) {
+  .modal-form__textarea {
+    height: 100px;
+  }
+}
 
 .modal-form__policy {
   display: -webkit-box;
@@ -924,6 +935,19 @@ img {
   font-size: 12px;
   letter-spacing: 0.36px;
   color: var(--primary-text-color);
+}
+@media screen and (max-width: 319px) {
+  .modal-form__policy {
+    font-size: 10px;
+  }
+}
+@media screen and (max-width: 479px) {
+  .modal-form__policy {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin-bottom: 20px;
+    height: 22px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .modal-form__policy {
